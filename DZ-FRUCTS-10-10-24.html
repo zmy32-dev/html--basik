@@ -1,8 +1,8 @@
 <style>
     ol {
-      list-style-type:  none;
+      list-style-type:  none; /* Убрал стандартный счетчик  */
       padding: 0;
-      counter-reset: item;    /* Сбрасываем счетчик */
+      counter-reset: item;    /* Сбрасываем счетчик  */
     }
     
     li {
@@ -10,13 +10,13 @@
       margin: 25px;
       font-size: 20px;
       padding: 25px;
-      counter-increment: item; /* Увеличиваем счетчик для каждого элемента */
+      counter-increment: item; /* Увелил счетчик для каждого элемента */
       margin-bottom: 5px;      /* Расстояние между элементами списка */
     }
     
     ol li:before {
-      content: counters(item, ".") ". "; /* Добавляем номера с разделителем */
-      margin-right: 15px;     /* Увеличиваем отступ между номером и текстом */
+      content: counters(item, ".") ". "; /* Добавил номр с разделителем для того что бы залить цветом весь элемент списка */
+      margin-right: 15px;     /* Увеличиваем отступ между номером и текстом что бы было как в образце */
       color: #ffffff;
     }
     
@@ -28,12 +28,11 @@
     }
     
     .apple-color {
-      background: #c4893b;
-      padding: 25px;
+      background: #b47d35;
+      padding: 25px;ы
       color: #ffffff;
     }
-    
-    </style>
+   </style>
     
     <div class="my-list">
     
