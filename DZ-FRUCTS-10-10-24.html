@@ -1,0 +1,48 @@
+<style>
+    ol {
+      list-style-type:  none;
+      padding: 0;
+      counter-reset: item;    /* Сбрасываем счетчик */
+    }
+    
+    li {
+      background: #ffca85;
+      margin: 25px;
+      font-size: 20px;
+      padding: 25px;
+      counter-increment: item; /* Увеличиваем счетчик для каждого элемента */
+      margin-bottom: 5px;      /* Расстояние между элементами списка */
+    }
+    
+    ol li:before {
+      content: counters(item, ".") ". "; /* Добавляем номера с разделителем */
+      margin-right: 15px;     /* Увеличиваем отступ между номером и текстом */
+      color: #ffffff;
+    }
+    
+    .my-list {
+      background: #ffe2bd;
+      padding: 25px;
+      margin-left: 150px;
+      margin-right: 150px;
+    }
+    
+    .apple-color {
+      background: #c4893b;
+      padding: 25px;
+      color: #ffffff;
+    }
+    
+    </style>
+    
+    <div class="my-list">
+    
+    <ol>
+    <li><span class="apple-color">Apple</span></li>
+    <li><span class="apple-color">Orange</span></li>
+    <li><span class="apple-color">Pineapple</span></li>
+    <li><span class="apple-color">Pear</span></li>
+    <li><span class="apple-color">Cherry</span></li>
+    </ol>
+    
+    </div>
